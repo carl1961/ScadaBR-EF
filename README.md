@@ -44,3 +44,21 @@ The source code I pulled from SourceForge and brought it to GitHub. Since I don'
 ## Known bugs
 - I experienced problems with OpenJDK 8 when sending emails. If you receive an error alarm containing the message 'javax.net.ssL.SSLExceptionHandshake: No appropriate protocol (protocol is disabled or cipher suites are inappropriate)' edit the file 'java.security' (which must be in '$JRE/lib/security/java.security', in my case was in '/etc/java-8-openjdk/security/java.security') and in the option 'jdk.tls.disabledAlgorithms' remove 'TLSv1' and 'TLSv1.1' from the list.
 - You can only open one Graphical Representation at a time in the same browser. This limitation, inherited from ScadaBR, is quite complex and I could not solve it in ScadaBR-EF, unfortunately.
+
+@celsou celsou released this 11 days ago 1 commit to master since this release
+
+Key changes
+The Modbus Serial protocol received fixes and worked successfully on a test Arduino. Here's how to access Modbus Serial here.
+Along with changes to the Modbus protocol, the default library for Serial communication has changed (details below).
+InstallerS Tomcat has been upgraded to version 9.0.50.
+New Serial Library and RXTX Version
+Until Release 2, ScadaBR-EF used the RXTX library for Serial communication by default. However, after the success in replacing this library with NRJavaSerial in the Modbus protocol, and verifying the backward compatibility of NRJavaSerial with RXTX code, we decided to abandon the use of RXTX as the standard and permanently adopt NRJavaSerial.
+
+
+
+Out of prudence, however, we make available in this release a ScadaBR_RXTX.war file, which contains Release 3 compiled with RXTX, in case of any problems with NRJavaSerial.
+
+As a result of the adoption of NRJavaSerial as the default, we will no longer release testing versions, such as those that existed in Release 2.
+
+For everyone who is starting with ScadaBR-EF, we strongly recommend using versions with NRJavaSerial.
+
