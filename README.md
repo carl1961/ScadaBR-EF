@@ -1,17 +1,17 @@
 # ScadaBR-EF
 
-### You can download the most current version of ScadaBR-EF [here](https://github.com/carl1961/ScadaBR-EF/releases/latest). I will hardly release new versions in the near future (reason: I went to college).
+### You can download the most current version of ScadaBR-EF [here](https://github.com/celsou/ScadaBR-EF/releases/latest). I will hardly release new versions in the near future (reason: I went to college).
 
 ## About
 The Enhanced Font-end (ScadaBR)[EF) is an experimental project, with no direct link to the original ScadaBR or scada-LTS. The main intention of this project is to generate a stable and more up-to-date version of ScadaBR with the technologies available in 2021, through a front end with several visual and usability improvements. In addition, ScadaBR-EF brings several fixes of small bugs that improve the user experience on a daily life.
 
 ## Installation
-From release 2, ScadaBR-EF has installers for Windows and Linux, get them on the [releases page](https://github.com/carl1961/ScadaBR-EF/releases/latest/).
+From release 2, ScadaBR-EF has installers for Windows and Linux, get them on the [releases page](https://github.com/celsou/ScadaBR-EF/releases/latest/).
 
 If you want or need to perform a manual installation, follow these steps:
 - Install Java (or [OpenJDK](https://adoptopenjdk.net/releases.html?variant=openjdk8&jvmVariant=hotspot)) 8
 - Install [Tomcat 8.5](https://tomcat.apache.org/download-80.cgi) or [Tomcat 9](https://tomcat.apache.org/download-90.cgi)
-- Download [last release](https://github.com/carl1961/ScadaBR-EF/releases/latest/)
+- Download [last release](https://github.com/celsou/ScadaBR-EF/releases/latest/)
 - Extract the '.war' file and copy the extracted folder into the 'webapps/' folder in Tomcat
 - Restart Tomcat
 
