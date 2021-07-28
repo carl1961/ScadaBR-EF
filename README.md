@@ -26,7 +26,7 @@ ScadaBR-EF was not created with any intention of being a Competitor of Scada-LTS
 
 
 
-Recursos   | ScadaBR 1.0 | ScadaBR 1.1 | ScadaBR-EF | Scada-LTS
+Resources  | ScadaBR 1.0 | ScadaBR 1.1 | ScadaBR-EF | Scada-LTS
 ---------- | ----------- | ----------- | ---------- | ---------
 Java version | 6th | 7 or 8 (depends on build) | 8th | 11
 User profile page | You don't have | It | It | Has
