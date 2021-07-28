@@ -45,6 +45,8 @@ The source code I pulled from SourceForge and brought it to GitHub. Since I don'
 - I experienced problems with OpenJDK 8 when sending emails. If you receive an error alarm containing the message 'javax.net.ssL.SSLExceptionHandshake: No appropriate protocol (protocol is disabled or cipher suites are inappropriate)' edit the file 'java.security' (which must be in '$JRE/lib/security/java.security', in my case was in '/etc/java-8-openjdk/security/java.security') and in the option 'jdk.tls.disabledAlgorithms' remove 'TLSv1' and 'TLSv1.1' from the list.
 - You can only open one Graphical Representation at a time in the same browser. This limitation, inherited from ScadaBR, is quite complex and I could not solve it in ScadaBR-EF, unfortunately.
 
+## Release 3
+
 @celsou celsou released this 11 days ago 1 commit to master since this release
 
 Key changes
